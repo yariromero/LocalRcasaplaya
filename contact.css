@@ -1,0 +1,166 @@
+body{
+    margin: 0;
+}
+
+#header{
+    display: flex;
+    padding: 25px;
+    align-items: center;
+    background-color: #355C7D;
+    justify-content: space-between;
+}
+#headerlogo{
+    width: 15vw;
+    min-width: 150px;
+}
+#headername{
+    color: white;
+    font-size: 8vw;
+    text-align: center;
+    font-family: 'Edu AU VIC WA NT Arrows';
+}
+#title1{
+    display: block;
+}
+#title2{
+    display: block;
+    font-size: 5vw;
+}
+#titlecontainer{
+    font-size: 125px;
+    text-align: center;
+    font-family: 'Dancing Script';
+    text-decoration: underline;
+}
+#infocontainer{
+    padding: 12px;
+    padding-top: 12px;
+}
+.contacttopic{
+    font-size: 40px;
+    font-weight: bold;
+}
+.contactinfo{
+    font-size: 30px;
+}
+#socialmediacont{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 50px;
+    padding: 25px;
+    flex-wrap: wrap;
+}
+.socialmedia{
+    flex: 1;
+    border-radius: 25px;
+    padding: 8px;
+    text-align: center;
+    height: 75px;
+    align-content: baseline;
+}
+.medianame{
+    font-family: 'Dancing Script';
+    font-size: 25px;
+}
+.medialogo{
+    min-width: 25px;
+    width: 2vw;
+    right: 8px;
+}
+.contactname{
+    font-size: 22px ;
+    display: block;
+    font-family: 'Dancing Script';
+}
+#logocontainer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 25px;
+}
+.logo{
+    width: 20vw;
+    min-width: 150px;
+}
+
+#footer{
+    background-color: #414A52;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    align-items: center;
+    text-align: center;
+    color: white;
+    gap: 12px;
+    border-top: white ridge 3px;
+}
+#footericoncontainer{
+    display: flex;
+    gap: 12px;
+    margin-top: 10px;
+}
+#footertext{
+    font-size: 100px;
+    font-family: 'Dancing Script';
+}
+#footerlogo{
+    max-width: 200px;
+}
+#footermotto{
+    font-family: 'Dancing Script';
+    font-size: 22px;
+}
+
+
+@media(width<=800px){
+    #header{
+        flex-direction: column;
+    }
+    #headername{
+        font-size: 50px;
+    }
+    #title2{
+        font-size: 35px;
+    }
+    #footer{
+        flex-direction: column;
+    }
+    #footertext{
+        font-size: 50px;
+    }
+    #titlecontainer{
+        font-size: 50px;
+    }
+    #infocontainer{
+        padding: 6px;
+        padding-top: 8px;
+    }
+    .contacttopic{
+        font-size: 25px;
+    }
+    .contactinfo{
+        font-size: 18px;
+    }
+    #socialmediacont{
+        gap: 12px;
+        padding: 8px;
+        flex-direction: column;
+    }
+    .socialmedia{
+        padding: 4px;
+        height: 50px;
+    }
+    .medianame{
+        font-size: 20px;
+    }
+    .medialogo{
+        width: 2vw;
+        right: 4px;
+    }
+    .contactname{
+        font-size: 16px ;
+    }
+    #logocontainer{
+        margin: 12px;
+    }
+}

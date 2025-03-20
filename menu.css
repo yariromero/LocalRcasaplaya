@@ -1,0 +1,125 @@
+body{
+    margin: 0;
+}
+
+#header{
+    display: flex;
+    padding: 25px;
+    align-items: center;
+    background-color: #355C7D;
+    justify-content: space-between;
+}
+#headerlogo{
+    width: 15vw;
+    min-width: 150px;
+}
+#headername{
+    color: white;
+    font-size: 8vw;
+    text-align: center;
+    font-family: 'Edu AU VIC WA NT Arrows';
+}
+#title1{
+    display: block;
+}
+#title2{
+    display: block;
+    font-size: 5vw;
+}
+#miniheader{
+    text-align: center;
+    font-family: 'Dancing Script';
+    font-size: 35px;
+}
+#topcontainer{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    min-height: 250px;
+}
+#buttoncontainer{
+    display: flex;
+    justify-content: center;
+}
+.button{
+    min-width: 100px;
+    min-height: 25px;
+    width: 10vw;
+    height: 3vw;
+    margin:5px;
+    background-color: #08314A;
+    color: white;
+    border-radius: 5%;
+    border: 0px;
+}
+.button:hover{
+    background-color: white;
+    color:#08314A;
+    transition: .3s;
+    border: 2px ridge #08314A;
+}
+#row{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.food{
+    width: 20vw;
+    min-width: 175px;
+}
+
+#footer{
+    background-color: #414A52;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    align-items: center;
+    text-align: center;
+    color: white;
+    gap: 12px;
+    border-top: white ridge 3px;
+}
+#footericoncontainer{
+    display: flex;
+    gap: 12px;
+    margin-top: 10px;
+}
+#footertext{
+    font-size: 100px;
+    font-family: 'Dancing Script';
+}
+#footerlogo{
+    max-width: 200px;
+}
+#footermotto{
+    font-family: 'Dancing Script';
+    font-size: 22px;
+}
+
+
+@media(width<=800px){
+    #header{
+        flex-direction: column;
+    }
+    #headername{
+        font-size: 50px;
+    }
+    #title2{
+        font-size: 35px;
+    }
+    #section1, #section2{
+        margin-top: 25px;
+        flex-direction: column;
+    }
+    #footer{
+        flex-direction: column;
+    }
+    #footertext{
+        font-size: 50px;
+    }
+    #topcontainer{
+        flex-direction: column;
+    }
+}

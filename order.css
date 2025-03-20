@@ -1,0 +1,149 @@
+body{
+    margin: 0;
+}
+
+#header{
+    display: flex;
+    padding: 25px;
+    align-items: center;
+    background-color: #355C7D;
+    justify-content: space-between;
+}
+#headerlogo{
+    width: 15vw;
+    min-width: 150px;
+}
+#headername{
+    color: white;
+    font-size: 8vw;
+    text-align: center;
+    font-family: 'Edu AU VIC WA NT Arrows';
+}
+#title1{
+    display: block;
+}
+#title2{
+    display: block;
+    font-size: 5vw;
+}
+#titlecontainer{
+    font-size:125px;
+    text-align: right;
+    padding-left: 6vw;
+    padding-right: 6vw;
+    font-family: 'Dancing Script';
+    text-decoration: underline;
+}
+#phonenumber{
+    font-size: 85px;
+    text-align: left;
+    font-family: 'Dancing Script';
+    padding-left: 5vw;
+    padding-right: 5vw;
+}
+#contactcont{
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 3vw;
+}
+#leftcont{
+    flex: 1;
+}
+#rightcont{
+    flex: 1;
+    text-align: center;
+}
+#call{
+    font-size: 125px;
+    text-align: left;
+    font-family: 'Dancing Script';
+    padding-left: 6vw;
+    padding-right: 6vw;
+}
+#message{
+    font-size: 50px;
+    text-align: left;
+    font-family: 'Dancing Script';
+    padding-left: 4vw;
+    padding-right: 4vw;
+}
+#phone{
+    width: 20vw;
+    min-width: 125px;
+}
+
+#footer{
+    background-color: #414A52;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    align-items: center;
+    text-align: center;
+    color: white;
+    gap: 12px;
+    border-top: white ridge 3px;
+}
+#footericoncontainer{
+    display: flex;
+    gap: 12px;
+    margin-top: 10px;
+}
+#footertext{
+    font-size: 100px;
+    font-family: 'Dancing Script';
+}
+#footerlogo{
+    max-width: 200px;
+}
+#footermotto{
+    font-family: 'Dancing Script';
+    font-size: 22px;
+}
+
+
+@media(width<=800px){
+    #header{
+        flex-direction: column;
+    }
+    #headername{
+        font-size: 50px;
+    }
+    #title2{
+        font-size: 35px;
+    }
+    #footer{
+        flex-direction: column;
+    }
+    #footertext{
+        font-size: 50px;
+    }
+    #titlecontainer{
+        font-size:50px;
+        text-align: center;
+        text-decoration: underline;
+        margin-top: 20px;
+    }
+    #phonenumber{
+        font-size: 35px;
+        text-align: center;
+    }
+    #call{
+        font-size: 50px;
+        text-align: center;
+    }
+    #contactcont{
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+    }
+    #message{
+        text-align: center;
+        font-size: 25px;
+    }
+    #phone{
+        width:15vw;
+    }
+}
